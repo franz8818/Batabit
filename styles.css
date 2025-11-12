@@ -1,28 +1,29 @@
 /* Representa todo el documento HTML */
-:root{
-/* Colores */
---bitcoin-orange: #f7931a;
---soft-orange: #ffe9d5;
---secondary-blue: #1a9af7;
---soft-blue: #e7f5ff;
---warm-black: #201e1c;
---balck: #282623;
---grey: #bababa;
---off-white: #faf8f7;
---just-white: #fff;
+:root {
+    /* Colores */
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201e1c;
+    --balck: #282623;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
-header{
+
+header {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -30,16 +31,19 @@ header{
     width: 100%;
     min-width: 320px;
     text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    color: var(--just-white);
 }
 
-header img{
+header img {
     width: 150px;
     height: 24px;
     margin-top: 60px;
-    align-self: center; /* centra un elmento que tenga un contenedor con disply-flex */
+    align-self: center;
+    /* centra un elmento que tenga un contenedor con disply-flex */
 }
 
-.header--title-container{
+.header--title-container {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
@@ -49,3 +53,18 @@ header img{
     align-self: center;
 }
 
+.header--title-container h1 {
+    font-size: 2.4rem; /* 24px */
+    font-weight: bold;
+    line-height: 2.6rem; /* 26px dimensión de altura - salto de linea */ 
+    color: var(--just-white);
+}
+
+.header--title-container p {
+    font-size: 1.4rem; /* 14px */
+    font-weight: 500;
+    line-height: 1.8rem; /* 28px dimensión de altura - salto de linea */ 
+    margin-top: 25px;
+    color: var(--soft-orange);
+    opacity: 0.8;
+    }
