@@ -78,7 +78,7 @@ header img {
     left: calc(50% - 114px);
     top: 270px;
     display: block;
-    margin-top: 35px;
+    margin-top: 45px;
     padding: 15px;
     width: 229px;
     height: 48px;
@@ -205,10 +205,17 @@ main {
     border-radius: 0 15px 0 0;    
 }
 
-.currency-table--container .table__bottom-left {
+.currency-table--container .table_bottom-left {
     border-radius: 0 0 0 15px;    
 }
 
-.currency-table--container .table__bottom-right {
+.currency-table--container .table_bottom-right {
     border-radius: 0 0 15px 0;    
+}
+
+.currency-table--container .table__right{
+    color: #757575;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: normal;
 }
