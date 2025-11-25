@@ -85,9 +85,9 @@ header img {
     background-color: var(--off-white);
 
     /* SOMBRAS */
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16); 
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     /* sobrepone el botón a la siguiente sección */
-    border: none; 
+    border: none;
     /* en caso de que exita otro borde definido */
     border-radius: 5px;
 
@@ -104,7 +104,8 @@ header img {
     height: 8px;
     margin-left: 10px;
     background-image: url("./assets/icons/arrowDown.svg");
-    background-repeat: no-repeat; /* evita que se repita */
+    background-repeat: no-repeat;
+    /* evita que se repita */
 }
 
 main {
@@ -149,19 +150,20 @@ main {
 }
 
 .main-exchange-container p {
-    font-size: 1.4rem; /* 14px */
+    font-size: 1.4rem;
+    /* 14px */
     line-height: 1.6rem;
     font-weight: 500;
     color: #757575;
     margin-bottom: 30px;
 }
 
-.main-currency-table{
+.main-currency-table {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto; 
+    margin: 0 auto;
     /* no margen arriba/abajo -  calcula para que quede en el centro izq/der */
     font-family: "Inter", sans-serif;
 }
@@ -174,7 +176,7 @@ main {
     color: var(--bitcoin-orange);
 }
 
-.currency-table--container{
+.currency-table--container {
     width: 90%;
     min-width: 230px;
     max-width: 300px;
@@ -202,37 +204,37 @@ main {
 }
 
 .currency-table--container .table__top-right {
-    border-radius: 0 15px 0 0;    
+    border-radius: 0 15px 0 0;
 }
 
 .currency-table--container .table_bottom-left {
-    border-radius: 0 0 0 15px;    
+    border-radius: 0 0 0 15px;
 }
 
 .currency-table--container .table_bottom-right {
-    border-radius: 0 0 15px 0;    
+    border-radius: 0 0 15px 0;
 }
 
-.currency-table--container .table__right{
+.currency-table--container .table__right {
     color: #757575;
     font-size: 1.4rem;
     line-height: 1.7rem;
     font-weight: normal;
 }
 
-.currency-table--container .down { 
+.currency-table--container .down {
     display: inline-block;
     width: 15px;
     height: 15px;
     margin-left: 20px;
     background-image: url("./assets/icons/trendingDown.svg");
-    background-size: cover; 
+    background-size: cover;
     /* La imagen se estira para cubrir toda el área donde está puesta */
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.currency-table--container .up { 
+.currency-table--container .up {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -247,14 +249,107 @@ main {
 .currency-table--date {
     width: 200px;
     margin: 15px auto 0;
-    padding: 8px 16px;   /* compacto de verdad */
+    padding: 8px 16px;
+    /* compacto de verdad */
     background-color: var(--soft-orange);
     border-radius: 8px;
 }
 
 .currency-table--date p {
-    margin: 0;          /* esto evita que el <p> empuje hacia abajo */
+    margin: 0;
+    /* esto evita que el <p> empuje hacia abajo */
     font-size: 1.2rem;
-    line-height: 1.2rem; /* evita que la línea sea alta */
-    color: var(--warm-blackblack);
+    line-height: 1.2rem;
+    /* evita que la línea sea alta */
+    color: var(--warm-black);
+}
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.product-detail--batata-logo {
+    position: absolute;
+    left: calc(50% - 20px);
+    top: -10px;
+
+    width: 40px;
+    height: 25px;
+
+    background-image: url(assets/icons/Batata.svg);
+}
+
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.product-detail--title h2 {
+    color: var(--just-white);
+
+    margin-bottom: 20px;
+
+    font-size: 2.4rem;
+    font-weight: bold;
+
+    line-height: ;
+    line-height: 2.6rem;
+}
+
+.product-detail--title p {
+    color: var(--just-white);
+
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.product-detail--card {
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+
+    /* Da el efecto de card de buena calidad */
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card .clock{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    
+    background-image: url(assets/icons/clock.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product--card-title {
+    margin-bottom: 15px;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product--card-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
 }
