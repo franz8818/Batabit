@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 930px)">
 </head>
 
 <body>
@@ -31,7 +32,37 @@
                 </div>
                 <section class="main-tables-container">
                     <div class="main-currency-table">
-                        <!--         BLOQUE        ELEMTO        -->
+                        <!--         BLOQUE   ELEMTO        -->
+                        <h3 class="currency-table--title">Monedas</h3>
+                        <div class="currency-table--container">
+                            <table>
+                                <tr>
+                                    <!--             MODIFICADOR        -->
+                                    <td class="table__top-left">Bitcoin</td>
+                                    <td class="table__top-right table__right">1.96<span class="down"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ethereum</td>
+                                    <td class="table__right">$ 0.07 <span class="up"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ripple</td>
+                                    <td class="table__right">$ 2.15 <span class="down"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="table_bottom-left">Stellar</td>
+                                    <td class="table_bottom-right table__right">$ 4.96 <span class="down"></span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="currency-table--date">
+                            <p>
+                                <b>Actualizado:</b> 14 de Julio de 2025 a las 23:45
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-currency-table">
+                        <!--         BLOQUE   ELEMTO        -->
                         <h3 class="currency-table--title">Monedas</h3>
                         <div class="currency-table--container">
                             <table>
@@ -69,6 +100,24 @@
                     <p>Confiable y diseñado para su uso diario.</p>
                 </div>
                 <section class="product-cards--container">
+                    <article class="product-detail--card">
+                        <span class="clock"></span>
+                        <p class="product--card-title">Tiempo real</p>
+                        <p class="product--card-body">Nuestro API toma información minuto a minuto sobre las tasas que
+                            más determinan el comportamiento.</p>
+                    </article>
+                    <article class="product-detail--card">
+                        <span class="clock"></span>
+                        <p class="product--card-title">Tiempo real</p>
+                        <p class="product--card-body">Nuestro API toma información minuto a minuto sobre las tasas que
+                            más determinan el comportamiento.</p>
+                    </article>
+                    <article class="product-detail--card">
+                        <span class="clock"></span>
+                        <p class="product--card-title">Tiempo real</p>
+                        <p class="product--card-body">Nuestro API toma información minuto a minuto sobre las tasas que
+                            más determinan el comportamiento.</p>
+                    </article>
                     <article class="product-detail--card">
                         <span class="clock"></span>
                         <p class="product--card-title">Tiempo real</p>
@@ -117,7 +166,16 @@
             </section>
         </main>
         <footer>
-            
+            <section class="left">
+                <ul>
+                    <li> <a href="#">Linkedin</a> </li>
+                    <li> <a href="#">Crunchbase</a> </li>               
+                    <li> <a href="#">Hackernews</a> </li>
+                </ul>
+            </section>
+            <section class="right">
+                <img src="./assets/icons/logoFooter.svg" alt="Logo de Batatabit">
+            </section>
         </footer>
     </header>
 </body>

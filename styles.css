@@ -411,7 +411,7 @@ main {
     color: #757575;
 }
 
-.plans-container--slider{
+.plans-container--slider {
     display: flex;
     /* coloca horizontalmente las cards */
     height: 316px;
@@ -428,12 +428,12 @@ main {
     scroll-snap-align: center;
 
     width: 70%;
-    min-width: 230px;
+    min-width: 290px;
     max-width: 300px;
 
     /* card */
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     margin-left: 15px;
     margin-right: 15px;
     padding: 0 15px;
@@ -516,4 +516,34 @@ main {
 
     /* alinea la flecha con el texto */
     vertical-align: text-bottom;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.left li {
+    margin: 10px 0;
+}
+
+.left a {
+    text-decoration: none;
+    color: var(--just-white);
 }
